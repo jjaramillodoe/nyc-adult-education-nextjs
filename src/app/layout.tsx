@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from '@/components/providers'
 import ScrollToTop from '@/components/sections/ScrollToTop'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -72,6 +73,7 @@ export default function RootLayout({
           </div>
         </Providers>
         <ScrollToTop />
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
